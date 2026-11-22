@@ -1,0 +1,41 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// fstab
+prebuilt_etc {
+    name: "fstab.hi3660",
+    src: "fstab.hi3660",
+    ramdisk_available: true,
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.connectivity.hi3660.rc",
+    src: "etc/init.connectivity.hi3660.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.hi3660.rc",
+    src: "etc/init.hi3660.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.usb.hi3660.rc",
+    src: "etc/init.usb.hi3660.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.hi3660.rc",
+    filename: "ueventd.rc",
+    src: "etc/ueventd.hi3660.rc",
+    vendor: true,
+}

@@ -1,0 +1,5 @@
+# Copyright (C) 2024 The Android Open Source Project
+
+on init
+    setprop sys.usb.configfs 1
+    symlink /dev/block/by-name/kernel /dev/block/by-name/ramdisk
