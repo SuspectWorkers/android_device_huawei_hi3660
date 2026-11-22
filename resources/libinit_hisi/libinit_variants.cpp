@@ -26,7 +26,9 @@ string ReadModelInfo() {
 
     getline(fd, buf);
     fd.close();
-    
+
+    while (!buf.empty() && buf.back() == '\0')
+        buf.pop_back();
     return buf;
 }
 
